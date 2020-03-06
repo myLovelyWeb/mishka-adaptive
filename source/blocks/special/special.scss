@@ -1,0 +1,249 @@
+.special {
+  padding-top: 30px;
+}
+
+.special__item-card {
+  @include wrapper();
+
+  position: relative;
+  padding-bottom: 42px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    background-image: url("../img/grey-wave.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.special__item-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.special__item-title {
+  margin: 0;
+  margin-top: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.special__item-desc {
+  margin: 0;
+  margin-top: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.special__item-table {
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.special__item-table tbody {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.special__item-table tr {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.special__item-table th,
+.special__item-table td {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  color: #444444;
+}
+.special__item-table th {
+  width: 100px;
+  padding-right: 10px;
+}
+
+.special__item-img-wrapper {
+  margin: 0;
+  margin-top: 28px;
+  text-align: center;
+}
+
+.special__item-price {
+  margin: 0;
+  margin-top: 27px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #444444;
+}
+
+.special__item-btn {
+  margin-top: 28px;
+}
+
+@media (min-width: 768px) {
+  .special {
+    padding-top: 40px;
+  }
+
+  .special__item-card {
+    position: relative;
+    padding-bottom: 68px;
+
+    &::after {
+      height: 17px;
+    }
+  }
+
+  .special__item-card-top-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .special__item-card-wrapper {
+    @include row-flex();
+
+    position: relative;
+  }
+
+  .special__item-info {
+    @include col();
+    @include size(12);
+
+    min-height: 300px;
+    padding-right: 378px;
+  }
+
+  .special__item-name {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .special__item-title {
+    margin: 0;
+    line-height: 17px;
+  }
+
+  .special__item-desc {
+    margin-top: 50px;
+  }
+
+  .special__item-table {
+    margin-top: 50px;
+  }
+
+  .special__item-table tr {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .special__item-img-wrapper {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 334px;
+    margin: 0;
+  }
+
+  .special__item-buy {
+    @include col();
+    @include size(12);
+
+    padding-right: 378px;
+  }
+
+  .special__item-price {
+    margin-top: 55px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .special {
+    padding-top: 70px;
+  }
+
+  .special__item-card {
+    padding-top: 55px;
+    padding-bottom: 95px;
+
+    &::after {
+      height: 25px;
+    }
+  }
+
+  .special__item-card-top-panel {
+    justify-content: flex-start;
+  }
+
+  .special__item-card-wrapper {
+    position: static;
+    width: 465px;
+    padding-left: 175px;
+  }
+
+  .special__item-name {
+    order: 1;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .special__item-title {
+    width: 170px;
+    padding-right: 45px;
+    padding-left: 45px;
+    text-align: center;
+  }
+
+  .special__item-img-wrapper {
+    z-index: -1;
+    top: 0;
+    right: 8%;
+    width: 42%;
+    text-align: right;
+  }
+
+  .special__item-info {
+    width: auto;
+    padding-right: 0;
+  }
+
+  .special__item-table {
+    margin-top: 60px;
+  }
+
+  .special__item-price {
+    margin-top: 105px;
+    font-size: 20px;
+  }
+
+  .special__item-buy {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .special__item-btn {
+    margin-top: 35px;
+  }
+}

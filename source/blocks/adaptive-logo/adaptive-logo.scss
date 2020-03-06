@@ -1,0 +1,33 @@
+.adaptive-logo--mobile {
+  width: 86px;
+  height: 35px;
+}
+
+.adaptive-logo--tablet,
+.adaptive-logo--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .adaptive-logo--mobile {
+    display: none;
+  }
+
+  .adaptive-logo--tablet {
+    display: block;
+    width: 113px;
+    height: 46px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .adaptive-logo--tablet {
+    display: none;
+  }
+
+  .adaptive-logo--desktop {
+    display: block;
+    width: 149px;
+    height: 72px;
+  }
+}

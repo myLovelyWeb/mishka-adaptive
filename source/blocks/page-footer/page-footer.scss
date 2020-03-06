@@ -1,0 +1,40 @@
+.page-footer {
+  padding-top: 25px;
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  @include wrapper();
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .page-footer__wrapper {
+    @include row-flex();
+    @include wrapper();
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__logo > svg {
+    width: 102px;
+    height: 34px;
+  }
+}
