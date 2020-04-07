@@ -134,7 +134,7 @@ gulp.task('svg:sprite', function() {
 gulp.task('webp', function() {
   return gulp.src('source/blocks/**/*.{png,jpg}')
     .pipe(rename({dirname: ''}))
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 75}))
     .pipe(gulp.dest('docs/img'));
 });
 

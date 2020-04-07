@@ -1106,13 +1106,10 @@ input[type="radio"].visually-hidden {
     margin-top: 0; }
 
 .catalog__item {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
   font-size: 0;
   text-align: center; }
 
-.catalog__item:hover > .catalog__item-text-wrapper {
+.catalog__list li:hover {
   box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1); }
 
 .catalog__item-img-wrapper {
@@ -1127,6 +1124,7 @@ input[type="radio"].visually-hidden {
 
 .catalog__item-title {
   display: block;
+  margin-bottom: auto;
   text-decoration: none; }
   .catalog__item-title:hover {
     color: rgba(0, 0, 0, 0.6); }
@@ -1151,17 +1149,19 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 30px; }
 
+.catalog__btn-wrapper {
+  padding-top: 22px;
+  border-top: 1px solid #ececec; }
+
 .catalog__btn {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
-  padding-top: 22px;
   padding-right: 0;
   padding-left: 0;
   border: none;
-  border-top: 1px solid #ececec;
   font-family: "Open Sans";
   font-size: 15px;
   line-height: 24px;
@@ -1926,7 +1926,7 @@ textarea {
   .catalog {
     padding-top: 0; }
   .catalog__list li {
-    width: 100%;
+    width: 668px;
     margin-top: 55px; }
     .catalog__list li:first-child {
       margin-top: 0; }
@@ -1937,12 +1937,13 @@ textarea {
   .catalog__item {
     display: -webkit-box;
     display: flex; }
+  .catalog__item-img-wrapper {
+    width: 334px; }
   .catalog__item-text-wrapper {
     display: -webkit-box;
     display: flex;
-    -webkit-box-flex: 1;
-            flex-grow: 1;
     flex-wrap: wrap;
+    width: 334px;
     padding-right: 30px;
     padding-bottom: 24px;
     padding-left: 30px; }
@@ -1954,9 +1955,7 @@ textarea {
     margin-bottom: 0; }
   .catalog__btn-wrapper {
     width: 100%;
-    margin-top: auto; }
-  .catalog__btn {
-    width: 100%;
+    margin-top: auto;
     padding-top: 24px; }
   .production {
     display: -webkit-box;
@@ -2375,6 +2374,8 @@ textarea {
     -webkit-box-pack: center;
             justify-content: center;
     height: 100%; }
+  .catalog__item-img-wrapper {
+    width: 316px; }
   .catalog__item-data {
     margin-top: 15px;
     margin-bottom: 40px; }
