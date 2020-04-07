@@ -5,6 +5,7 @@
     <title>Главная страница интернет-магазина «MiSHKA»</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link href="libs/slick/slick.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page">
@@ -153,23 +154,35 @@
       <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__list-wrapper">
-            <ul class="reviews__list">
+          <div class="reviews__slider-wrapper">
+            <ul class="reviews__slider">
               <li>
                 <blockquote>
-                  <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                  <cite class="reviews__author">Анастасия Красильникова <span>@misssssiskras</span></cite>
+                  <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                  <cite>Анастасия Красильникова <span>@misssssiskras</span></cite>
+                </blockquote>
+              </li>
+              <li>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum modi impedit at adipisci hic numquam dicta repellat fugiat voluptate id fugit ad velit voluptatum omnis provident, officia officiis voluptas sit?</p>
+                  <cite>Lorem ipsum <span>@loremipsum</span></cite>
+                </blockquote>
+              </li>
+              <li>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab nostrum consequuntur impedit! Veritatis enim, commodi nulla repellendus provident molestiae error ipsum possimus nostrum magnam. Voluptate id doloremque sint soluta?</p>
+                  <cite>Lorem ipsum <span>@loremipsum</span></cite>
                 </blockquote>
               </li>
             </ul>
-            <ul class="reviews__controls">
+            <!--<ul class="reviews__controls">
               <li>
                 <button class="reviews__slide-btn reviews__slide-btn--prev" type="button"><span class="visually-hidden">Перейти к предыдущему отзыву</span></button>
               </li>
               <li>
                 <button class="reviews__slide-btn reviews__slide-btn--next" type="button"><span class="visually-hidden">Перейти к следующему отзыву</span></button>
               </li>
-            </ul>
+            </ul>-->
           </div>
           <a class="btn reviews__btn" href="#">Написать</a>
         </div>
@@ -236,6 +249,10 @@
       <button class="modal__btn">Добавить</button>
     </section>
     <script src="js/scripts.min.js"></script>
+    <script src="libs/jquery/jquery-1.11.0.min.js"></script>
+    <script src="libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/slider.min.js"></script>
     <script src="libs/outline/outline.js"></script>
   </body>
 </html>
