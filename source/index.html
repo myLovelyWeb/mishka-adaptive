@@ -84,14 +84,14 @@
     <main>
       <section class="special">
         <h3 class="visually-hidden">Специальные предложения</h3>
-        <article class="special__item-card">
-          <header class="special__item-card-top-panel">
-            <b class="special__item-name">Вязаные корзинки</b>
-            <h4 class="special__item-title">Товар недели</h4>
-          </header>
-          <div class="special__item-card-wrapper">
-            <div class="special__item-info">
-              <p class="special__item-desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <div class="special__wrapper">
+          <article class="special__item">
+            <header class="special__item-top-panel">
+              <b class="special__item-name">Вязаные корзинки</b>
+              <h4 class="special__item-title">Товар недели</h4>
+            </header>
+            <div class="special__item-desc">
+              <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
               <table class="special__item-table">
                 <tbody>
                   <tr>
@@ -109,7 +109,7 @@
                 </tbody>
               </table>
             </div>
-            <p class="special__item-img-wrapper">
+            <p class="special__item-img">
               <picture>
                 <source type="image/webp" media="(min-width: 1250px)" srcset="img/special--desktop.webp">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/special--tablet.webp">
@@ -120,11 +120,11 @@
               </picture>
             </p>
             <div class="special__item-buy">
-              <p class="special__item-price">Цена: 990 руб.</p>
-              <a class="btn special__item-btn" href="#">Заказать</a>
+              <p>Цена: 990 руб.</p>
+              <a class="btn" href="#">Заказать</a>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </section>
       <section class="about">
         <div class="about__wrapper">
@@ -175,37 +175,33 @@
                 </blockquote>
               </li>
             </ul>
-            <!--<ul class="reviews__controls">
-              <li>
-                <button class="reviews__slide-btn reviews__slide-btn--prev" type="button"><span class="visually-hidden">Перейти к предыдущему отзыву</span></button>
-              </li>
-              <li>
-                <button class="reviews__slide-btn reviews__slide-btn--next" type="button"><span class="visually-hidden">Перейти к следующему отзыву</span></button>
-              </li>
-            </ul>-->
           </div>
           <a class="btn reviews__btn" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__table">
-            <tbody>
-              <tr>
-                <th>e-mail:</th>
-                <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-              </tr>
-              <tr>
-                <th>адрес:</th>
-                <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="contacts__inner-wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+            <table class="contacts__table">
+              <tbody>
+                <tr>
+                  <th>e-mail:</th>
+                  <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+                </tr>
+                <tr>
+                  <th>адрес:</th>
+                  <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p class="contacts__map-wrapper">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1578972230204!5m2!1sru!2sru" style="border:0;" allowfullscreen=""></iframe>
           </p>
-          <a class="btn contacts__btn" href="#">Напишите нам</a>
+          <div class="contacts__inner-wrapper">
+            <a class="btn contacts__btn" href="#">Напишите нам</a>
+          </div>
         </div>
       </section>
     </main>
