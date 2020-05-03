@@ -8,13 +8,18 @@
   list-style: none;
 }
 
-.social li {
+.social > li {
   margin: 0 20px;
 }
 
 .social__link {
-  &:hover > svg {
+  &:hover > svg,
+  &:focus > svg {
     fill: #46c1ae;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active > svg {

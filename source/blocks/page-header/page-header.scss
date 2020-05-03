@@ -1,12 +1,13 @@
 .page-header__title {
   @include row-flex();
-  @include wrapper();
 
   align-items: center;
   justify-content: center;
   height: 175px;
   margin: 0;
-  font-family: "Open Sans";
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: "Open Sans", sans-serif;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
@@ -27,6 +28,8 @@
     top: -60px;
     height: 240px;
     margin-bottom: -20px;
+    padding-right: 50px;
+    padding-left: 50px;
     z-index: 1;
     font-size: 43px;
     line-height: 50px;
@@ -34,8 +37,8 @@
     &::after {
       position: absolute;
       content: "";
-      right: -1px;
-      bottom: -1px;
+      right: 0;
+      bottom: 0;
       left: 0;
       height: 25px;
       background-image: url("../img/white-line.svg");
@@ -54,6 +57,7 @@
   .page-header__title {
     top: -70px;
     height: 272px;
+    margin-bottom: 30px;
     font-size: 53px;
     line-height: 57px;
 

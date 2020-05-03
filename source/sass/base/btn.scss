@@ -13,9 +13,14 @@
   background-color: transparent;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #ffffff;
     background-color: #444444;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {
