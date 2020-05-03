@@ -3,7 +3,6 @@
 const autoprefixer = require('autoprefixer');
 const del = require('del');
 const gulp = require('gulp');
-const gulpif = require('gulp-if');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const include = require('posthtml-include');
@@ -16,12 +15,9 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const server = require('browser-sync').create();
 const smartgrid = require('smart-grid');
-const sourcemaps = require('gulp-sourcemaps');
 const svgstore = require('gulp-svgstore');
 const uglify = require('gulp-uglify');
 const webp = require('gulp-webp');
-
-const isDev = process.argv.includes('--dev');
 
 gulp.task('clean', function() {
   return del('docs');
@@ -101,7 +97,6 @@ gulp.task('style', function() {
   return gulp
     .src('source/sass/style.scss')
     .pipe(plumber())
-    .pipe(gulpif(isDev, sourcemaps.init({loadMaps: true})))
     .pipe(sass({
       includePaths: require('node-normalize-scss').includePaths
     }))
@@ -112,8 +107,6 @@ gulp.task('style', function() {
     .pipe(gulp.dest('docs/css'))
     .pipe(minify())
     .pipe(rename('style.min.css'))
-    .pipe(gulpif(isDev, sourcemaps.write()))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest('docs/css'))
     .pipe(server.stream());
 });
