@@ -28,6 +28,5 @@
 - используемый шрифт: Open Sans (regular, bold)
 
 ## скрипты:
-- "dev": "gulp build --dev && gulp serve"
+- "dev": "gulp build && gulp serve"
 - "build": "gulp build"
-- "start": "gulp start"
