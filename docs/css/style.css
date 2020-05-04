@@ -1006,39 +1006,58 @@ input[type="radio"].visually-hidden {
     opacity: 0.3; }
 
 .modal {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.overlay {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  outline: 0; }
+
+.approving__content {
   width: 320px;
-  padding-top: 32px;
+  padding-top: 35px;
   padding-right: 30px;
   padding-bottom: 45px;
   padding-left: 30px;
-  border: 1px solid #c6c6c6;
-  text-align: center;
+  border-top: 1px solid #c6c6c6;
   background-color: #ffffff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-  z-index: 3; }
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.25); }
 
-.modal__title {
-  font-family: "Open Sans";
+.approving__content > h2 {
+  width: 155px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Open Sans", sans-serif;
   font-size: 25px;
   line-height: 30px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; }
 
-.modal__text {
+.approving__content > p {
   margin: 0;
   margin-top: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center;
+  color: #444444; }
 
-.modal__size-list {
+.approving__form > fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.approving__form ul {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -1046,43 +1065,49 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none; }
 
-.modal__size-list a {
+.approving__form label > span {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 54px;
+  width: 78px;
+  height: 48px;
   border: 2px solid rgba(68, 68, 68, 0.1);
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
-  text-decoration: none;
-  color: #444444; }
-  .modal__size-list a:hover {
+  text-transform: uppercase;
+  color: #444444;
+  cursor: pointer; }
+  .approving__form label > span:hover, .approving__form label > span:focus {
     border-color: rgba(68, 68, 68, 0.3); }
-  .modal__size-list a:active {
-    border-color: #62d1ba; }
+  .approving__form label > span:focus {
+    outline: none; }
 
-.modal__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.approving__form label > input[type="radio"]:checked + span {
+  border-color: #62d1ba; }
+
+.approving__form-btn {
   width: 100%;
-  height: 52px;
+  min-height: 52px;
   margin-top: 30px;
-  padding: 0;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
   border: none;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #63d1bb;
   cursor: pointer; }
-  .modal__btn:hover {
-    opacity: 0.3; }
-  .modal__btn:active {
-    opacity: 0.1; }
+  .approving__form-btn:hover, .approving__form-btn:focus {
+    background-color: #46c1ae; }
+  .approving__form-btn:focus {
+    outline: none; }
+  .approving__form-btn:active {
+    background-color: rgba(70, 193, 174, 0.3); }
 
 .catalog {
   padding-top: 30px;
@@ -1953,19 +1978,17 @@ textarea {
     border-bottom: none; }
   .developer {
     padding: 0; }
-  .modal {
+  .approving__content {
     width: 564px;
     padding-top: 45px;
     padding-right: 100px;
-    padding-left: 100px; }
-  .modal__title {
-    font-size: 30px;
-    line-height: 57px; }
-  .modal__text {
-    margin-top: 30px;
-    font-size: 17px; }
-  .modal__size-list a {
-    width: 112px; }
+    padding-bottom: 45px;
+    padding-left: 100px;
+    border: 1px solid #c6c6c6; }
+  .approving__content > h2 {
+    width: 100%; }
+  .approving__form label > span {
+    width: 108px; }
   .catalog {
     padding-top: 0; }
   .catalog__list li {
@@ -2372,6 +2395,11 @@ textarea {
     margin-left: 0; }
   .social {
     width: 12%; }
+  .approving__content > h2 {
+    font-size: 30px;
+    line-height: 57px; }
+  .approving__content > p {
+    font-size: 17px; }
   .catalog {
     padding-bottom: 55px; }
   .catalog__list {

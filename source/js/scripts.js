@@ -1,5 +1,7 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+"use strict";
+
+let navMain = document.querySelector('.main-nav');
+let navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--no-js');
 

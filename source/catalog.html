@@ -190,5 +190,37 @@
         <a class="developer" href="https://github.com/myLovelyWeb">Разработано:<br>myLovelyWeb</a>
       </div>
     </footer>
+    <section class="modal approving overlay visually-hidden" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="approvingTitle" aria-describedby="approvingDesc">
+      <div class="modal__content approving__content">
+        <h2 id="approvingTitle">Добавить в корзину</h2>
+        <p id="approvingDesc">Выберите размер:</p>
+        <form class="approving__form" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" class="visually-hidden" name="item-size" value="s" checked>
+                  <span>s</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" class="visually-hidden" name="item-size" value="m">
+                  <span>m</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" class="visually-hidden" name="item-size" value="l">
+                  <span>l</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="approving__form-btn" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
     <script src="js/scripts.min.js"></script>
+    <script src="js/approving.min.js"></script>
   </body>

@@ -16,7 +16,7 @@ const sass = require('gulp-sass');
 const server = require('browser-sync').create();
 const smartgrid = require('smart-grid');
 const svgstore = require('gulp-svgstore');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const webp = require('gulp-webp');
 
 gulp.task('clean', function() {
