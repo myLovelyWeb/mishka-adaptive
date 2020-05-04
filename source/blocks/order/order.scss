@@ -46,7 +46,8 @@
   &::after {
     content: "";
     flex-grow: 1;
-    height: 1px;
+    height: 3px;
+    transform: scaleY(0.3);
     background-color: #63d1bb;
   }
 }

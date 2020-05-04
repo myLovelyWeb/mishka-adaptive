@@ -1287,7 +1287,10 @@ input[type="radio"].visually-hidden {
   .order__form > fieldset > legend::after {
     content: "";
     flex-grow: 1;
-    height: 1px;
+    height: 3px;
+    -webkit-transform: scaleY(0.3);
+        -ms-transform: scaleY(0.3);
+            transform: scaleY(0.3);
     background-color: #63d1bb; }
 
 .order__form > fieldset > legend > span {
