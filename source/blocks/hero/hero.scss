@@ -54,15 +54,21 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
+  text-decoration: none;
   color: #ffffff;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     padding-bottom: 43px;
 
     &::after {
       opacity: 0.7;
     }
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {

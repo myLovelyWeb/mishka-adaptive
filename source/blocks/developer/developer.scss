@@ -8,7 +8,17 @@
   text-align: center;
   color: #000000;
 
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
   &:active {
+    color: #46c1ae;
     opacity: 0.3;
   }
 }

@@ -389,6 +389,18 @@ input[type="radio"].visually-hidden {
   padding-left: 30px;
   text-align: center; }
 
+.main-nav__logo {
+  display: inline-block; }
+  .main-nav__logo:hover, .main-nav__logo:focus {
+    opacity: 0.6; }
+  .main-nav__logo:focus {
+    outline: none; }
+  .main-nav__logo:active {
+    opacity: 0.3; }
+  .main-nav__logo:not([href]) {
+    pointer-events: none;
+    opacity: 0.3; }
+
 .main-nav__toggle {
   position: absolute;
   content: "";
@@ -412,9 +424,9 @@ input[type="radio"].visually-hidden {
   .main-nav__toggle:hover::before {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.6), 0 12px rgba(0, 0, 0, 0.6); }
-  .main-nav__toggle:active {
+  .main-nav__toggle:focus {
     outline: none; }
-  .main-nav__toggle:active::before {
+  .main-nav__toggle:active::before, .main-nav__toggle:focus::before {
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.3), 0 12px rgba(0, 0, 0, 0.3); }
 
@@ -550,12 +562,15 @@ input[type="radio"].visually-hidden {
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
+  text-decoration: none;
   color: #ffffff;
   cursor: pointer; }
-  .hero__category-link:hover {
+  .hero__category-link:hover, .hero__category-link:focus {
     padding-bottom: 43px; }
-    .hero__category-link:hover::after {
+    .hero__category-link:hover::after, .hero__category-link:focus::after {
       opacity: 0.7; }
+  .hero__category-link:focus {
+    outline: none; }
   .hero__category-link:active {
     color: rgba(255, 255, 255, 0.3); }
     .hero__category-link:active::after {
@@ -982,7 +997,12 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   text-align: center;
   color: #000000; }
+  .developer:hover, .developer:focus {
+    color: #46c1ae; }
+  .developer:focus {
+    outline: none; }
   .developer:active {
+    color: #46c1ae;
     opacity: 0.3; }
 
 .modal {
@@ -1908,10 +1928,22 @@ textarea {
     align-items: center;
     justify-content: space-between; }
   .page-footer__logo {
-    display: block; }
-  .page-footer__logo > svg {
-    width: 102px;
-    height: 34px; }
+    display: block;
+    cursor: pointer; }
+    .page-footer__logo > svg {
+      width: 102px;
+      height: 34px; }
+    .page-footer__logo:not([href]) {
+      pointer-events: none;
+      opacity: 0.3; }
+    .page-footer__logo:hover > svg,
+    .page-footer__logo:focus > svg {
+      fill: #46c1ae; }
+    .page-footer__logo:focus {
+      outline: none; }
+    .page-footer__logo:active > svg {
+      fill: #46c1ae;
+      opacity: 0.3; }
   .social {
     width: 18.61%;
     padding: 0;

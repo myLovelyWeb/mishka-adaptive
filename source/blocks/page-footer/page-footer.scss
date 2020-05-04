@@ -31,10 +31,30 @@
 
   .page-footer__logo {
     display: block;
-  }
+    cursor: pointer;
 
-  .page-footer__logo > svg {
-    width: 102px;
-    height: 34px;
+    & > svg {
+      width: 102px;
+      height: 34px;
+    }
+
+    &:not([href]) {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+
+    &:hover > svg,
+    &:focus > svg  {
+      fill: #46c1ae;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active > svg {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
 }
