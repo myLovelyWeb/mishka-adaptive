@@ -91,7 +91,7 @@
   background-image: url("../img/feature-package.svg");
 }
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .about {
     padding-top: 55px;
   }
@@ -110,7 +110,7 @@
     @include row-flex();
 
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
 
   .about__features-list > li {
@@ -143,6 +143,12 @@
 
   .about__feature {
     padding-right: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__features-list {
+    margin-bottom: 80px;
   }
 }
 

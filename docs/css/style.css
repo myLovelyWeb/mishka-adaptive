@@ -1592,6 +1592,43 @@ textarea {
   .catalog__list li:nth-child(2n) {
     margin-left: 20px; } }
 
+@media (min-width: 660px) {
+  .about {
+    padding-top: 55px; }
+  .about__wrapper {
+    padding-right: 50px;
+    padding-left: 50px; }
+  .about__title {
+    font-size: 43px;
+    line-height: 50px; }
+  .about__features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 0; }
+  .about__features-list > li {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(50% - 0px);
+    margin-top: 55px; }
+    .about__features-list > li:nth-child(4) {
+      order: 1;
+      margin-top: 0; }
+    .about__features-list > li:nth-child(2) {
+      order: 2; }
+    .about__features-list > li:nth-child(5) {
+      order: 3; }
+    .about__features-list > li:nth-child(3) {
+      order: 4; }
+    .about__features-list > li:nth-child(6) {
+      order: 5; }
+  .about__feature {
+    padding-right: 20%; } }
+
 @media screen and (min-width: 768px) {
     .wrapper {
       padding-left: 50px;
@@ -1824,41 +1861,8 @@ textarea {
   .special__item-buy > p {
     margin-top: 0;
     font-size: 20px; }
-  .about {
-    padding-top: 55px; }
-  .about__wrapper {
-    padding-right: 50px;
-    padding-left: 50px; }
-  .about__title {
-    font-size: 43px;
-    line-height: 50px; }
   .about__features-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 50px;
     margin-bottom: 80px; }
-  .about__features-list > li {
-    box-sizing: border-box;
-    word-wrap: break-word;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: calc(50% - 0px);
-    margin-top: 55px; }
-    .about__features-list > li:nth-child(4) {
-      order: 1;
-      margin-top: 0; }
-    .about__features-list > li:nth-child(2) {
-      order: 2; }
-    .about__features-list > li:nth-child(5) {
-      order: 3; }
-    .about__features-list > li:nth-child(3) {
-      order: 4; }
-    .about__features-list > li:nth-child(6) {
-      order: 5; }
-  .about__feature {
-    padding-right: 20%; }
   .reviews {
     padding-top: 0; }
   .reviews__wrapper {
