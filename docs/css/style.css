@@ -563,10 +563,8 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #ffffff;
   cursor: pointer; }
-  .hero__category-link:hover, .hero__category-link:focus {
-    padding-bottom: 43px; }
-    .hero__category-link:hover::after, .hero__category-link:focus::after {
-      opacity: 0.7; }
+  .hero__category-link:hover::after, .hero__category-link:focus::after {
+    opacity: 0.7; }
   .hero__category-link:active {
     color: rgba(255, 255, 255, 0.3); }
     .hero__category-link:active::after {
@@ -1805,8 +1803,6 @@ textarea {
     line-height: 30px; }
     .hero__category-link::after {
       top: 45%; }
-    .hero__category-link:hover {
-      padding-bottom: 50px; }
   .special {
     padding-top: 40px; }
   .special__wrapper {
@@ -2279,9 +2275,6 @@ textarea {
     display: block;
     width: 149px;
     height: 72px; }
-  .hero__wrapper {
-    padding-right: 8%;
-    padding-left: 8%; }
   .special {
     padding-top: 70px; }
   .special__item {

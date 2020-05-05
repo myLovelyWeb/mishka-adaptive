@@ -60,7 +60,6 @@
 
   &:hover,
   &:focus {
-    padding-bottom: 43px;
 
     &::after {
       opacity: 0.7;
@@ -156,17 +155,5 @@
     &::after {
       top: 45%;
     }
-
-    &:hover {
-      padding-bottom: 50px;
-    }
-
-  }
-}
-
-@media (min-width: 1250px) {
-  .hero__wrapper {
-    padding-right: 8%;
-    padding-left: 8%;
   }
 }
