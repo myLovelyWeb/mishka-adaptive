@@ -86,8 +86,13 @@
   background-size: 50px 26px;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
   }
 
   &:active {
@@ -116,6 +121,8 @@
 .reviews__btn {
   width: 100%;
   margin-top: 38px;
+  pointer-events: none;
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {

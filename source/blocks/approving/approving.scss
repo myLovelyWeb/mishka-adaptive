@@ -67,10 +67,6 @@
     &:focus {
       border-color: rgba(68, 68, 68, 0.3);
     }
-  
-    &:focus {
-      outline: none;
-    }
   }
 
   & > input[type="radio"]:checked + span {
@@ -98,10 +94,6 @@
   &:hover,
   &:focus {
     background-color: #46c1ae;
-  }
-
-  &:focus {
-    outline: none;
   }
 
   &:active {

@@ -1,10 +1,10 @@
 "use strict";
 
-let orderBtn = document.querySelector('.production__btn');
+let approvingOpenBtn = document.querySelector('.approving-js');
 let approving = document.querySelector('.approving');
 let approvingCloseBtn = approving.querySelector('.approving__form-btn');
 
-orderBtn.addEventListener('click', function() {
+approvingOpenBtn.addEventListener('click', function() {
   approving.classList.remove('visually-hidden');
 });
 

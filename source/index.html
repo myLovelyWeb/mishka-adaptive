@@ -121,7 +121,7 @@
             </p>
             <div class="special__item-buy">
               <p>Цена: 990 руб.</p>
-              <a class="btn" href="#">Заказать</a>
+              <a class="btn approving-js" href="#">Заказать</a>
             </div>
           </article>
         </div>
@@ -233,21 +233,43 @@
         <a class="developer" href="https://github.com/myLovelyWeb">Разработано:<br>myLovelyWeb</a>
       </div>
     </footer>
-    <section class="selected modal">
-      <h2 class="visually-hidden">Окно с выбранным товаром</h2>
-      <b class="modal__title">Добавить в корзину</b>
-      <p class="modal__text">Выберите размер:</p>
-      <ul class="modal__size-list">
-        <li><a href="#">S</a></li>
-        <li><a href="#">M</a></li>
-        <li><a href="#">L</a></li>
-      </ul>
-      <button class="modal__btn">Добавить</button>
+    <section class="modal approving overlay visually-hidden" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="approvingTitle" aria-describedby="approvingDesc">
+      <div class="modal__content approving__content">
+        <h2 id="approvingTitle">Добавить в корзину</h2>
+        <p id="approvingDesc">Выберите размер:</p>
+        <form class="approving__form" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" class="visually-hidden" name="item-size" value="s" checked>
+                  <span>s</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" class="visually-hidden" name="item-size" value="m">
+                  <span>m</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" class="visually-hidden" name="item-size" value="l">
+                  <span>l</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="approving__form-btn" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
     <script src="js/scripts.min.js"></script>
     <script src="libs/jquery/jquery-1.11.0.min.js"></script>
     <script src="libs/jquery/jquery-migrate-1.2.1.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="js/slider.min.js"></script>
+    <script src="libs/focus-visible/focus-visible.min.js"></script>
+    <script src="js/approving.min.js"></script>
   </body>
 </html>

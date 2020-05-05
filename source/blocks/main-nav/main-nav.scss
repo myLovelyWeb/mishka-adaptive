@@ -22,10 +22,6 @@
     opacity: 0.6;
   }
 
-  &:focus {
-    outline: none;
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -59,17 +55,17 @@
     box-shadow: 0 6px 0 0 #221f1f, 0 12px 0 0 #221f1f;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.6), 0 12px rgba(0, 0, 0, 0.6);
   }
 
-  &:focus {
+  &:focus:not(:focus-visible) {
     outline: none;
   }
 
-  &:active::before,
-  &:focus::before {
+  &:active::before {
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.3), 0 12px rgba(0, 0, 0, 0.3);
   }
@@ -115,7 +111,8 @@
   text-decoration: none;
   color: #000000;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba(0, 0, 0, 0.6);
   }
 
