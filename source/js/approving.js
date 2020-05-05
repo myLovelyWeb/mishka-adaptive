@@ -4,7 +4,8 @@ let approvingOpenBtn = document.querySelector('.approving-js');
 let approving = document.querySelector('.approving');
 let approvingCloseBtn = approving.querySelector('.approving__form-btn');
 
-approvingOpenBtn.addEventListener('click', function() {
+approvingOpenBtn.addEventListener('click', function(evt) {
+  evt.preventDefault();
   approving.classList.remove('visually-hidden');
 });
 
