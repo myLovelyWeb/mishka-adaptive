@@ -1,9 +1,12 @@
 @import "normalize";
 @import "base/base.scss";
 @import "base/fonts.scss";
+@import "base/inputs.scss";
 @import "base/btn.scss";
 @import "grid/smart-grid.scss";
 @import "mixins/wrapper.scss";
+@import "mixins/modal.scss";
+@import "mixins/overlay";
 @import "../blocks/page/page.scss";
 @import "../blocks/page-header/page-header.scss";
 @import "../blocks/main-nav/main-nav.scss";
@@ -16,10 +19,8 @@
 @import "../blocks/page-footer/page-footer.scss";
 @import "../blocks/social/social.scss";
 @import "../blocks/developer/developer.scss";
-@import "mixins/modal.scss";
-@import "mixins/overlay";
 @import "../blocks/approving/approving";
 @import "../blocks/catalog/catalog.scss";
 @import "../blocks/production/production.scss";
 @import "../blocks/order/order.scss";
-@import "base/inputs.scss";
+
