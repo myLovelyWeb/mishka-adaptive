@@ -13,6 +13,11 @@
 }
 
 .social__link {
+  &:not([href]) {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
   &:hover > svg,
   &:focus > svg {
     fill: #46c1ae;

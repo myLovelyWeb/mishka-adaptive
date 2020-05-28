@@ -1191,6 +1191,10 @@ textarea {
 .social > li {
   margin: 0 20px; }
 
+.social__link:not([href]) {
+  opacity: 0.3;
+  pointer-events: none; }
+
 .social__link:hover > svg,
 .social__link:focus > svg {
   fill: #46c1ae; }
