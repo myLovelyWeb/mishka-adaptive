@@ -191,6 +191,12 @@
     padding-top: 70px;
   }
 
+  .special__wrapper {
+    &::after {
+      height: 25px;
+    }
+  }
+
   .special__item {
     grid-template-columns: 175px 350px 525px;
   }

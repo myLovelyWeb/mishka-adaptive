@@ -2281,6 +2281,8 @@ fieldset > .order__form-wrapper:nth-of-type(n + 2) {
     height: 72px; }
   .special {
     padding-top: 70px; }
+  .special__wrapper::after {
+    height: 25px; }
   .special__item {
     grid-template-columns: 175px 350px 525px; }
   .special__item-card {
